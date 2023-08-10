@@ -11,6 +11,8 @@
  */
 package com;
 
+import com.arms.korwoo.Start;
+import com.arms.korwoo.Tv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -26,12 +28,15 @@ import org.modelmapper.ModelMapper;
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        Start st=new Start();
+
     }
 
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
+
 
 
 }
